@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <body>
+
+         <h1 class="title">Provider Calculator</h1>
+    
+
+    <div class="wrapper">
+    
+      <div class="range">
+        
+<div class="for-input">
+
+
+     <div class="storage-range">
+        <label for="storage-range">Storage (GB):</label>
+        <input
+          type="range"
+          id="storage-range"
+          min="0"
+          max="1000"
+          value="100"
+          step="1"
+        />
+        <span id="storage-value">100</span>
+       </div>
+
+        <div class="transfer-range">
+        <label for="transfer-range">Transfer (GB):</label>
+        <input
+          type="range"
+          id="transfer-range"
+          min="0"
+          max="1000"
+          value="200"
+          step="1"
+        />
+          <span id="transfer-value">200</span>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        
+       <div class="button">
+
+         <button id="calculate-button">Calculate</button>
+       </div> 
+       <p id="result">
+        
+
+          <ul class="list">
+            <li>backblaze.com 	</li>
+            <li>bunny.net <br>  <select id="storageType">
+          <option>HDD</option>
+          <option>SSD</option>
+        </select> <br></li>
+            <li>scaleway.com <br>  <select id="type">
+          <option>Multi</option>
+          <option>Singl</option>
+        </select> <br></li>
+            <li>vultr.com</li>
+          </ul>
+        </p>
+      
+       </div>
+      <div class="chart">
+        <canvas id="myChart"></canvas>
+        
+       
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
